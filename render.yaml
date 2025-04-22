@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mern-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node sever.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://D-jey:C4es8UkfF4lPqnzO@d-jey.3h8au.mongodb.net/?retryWrites=true&w=majority&appName=D-jey
+      - key: NODE_ENV
+        value: production
